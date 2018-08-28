@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Expedia
 x-complete: 1
@@ -202,4 +201,66 @@ paths:
       tags:
       - Travel
       - Trips
----
+  /api/trips:
+    get:
+      summary: Get Trips
+      description: Mobile API Trips
+      operationId: trips-search
+      x-api-path-slug: apitrips-get
+      parameters:
+      - in: query
+        name: filterBookingStatus
+        description: An optional parameter to filter by booking status
+      - in: query
+        name: filterLineOfBusiness
+        description: An optional parameters to filter by line of business
+      - in: query
+        name: filterTimePeriod
+        description: An optional parameter to filter by time period
+      - in: query
+        name: getCachedDetails
+        description: Optionally get full details for the first N trips
+      - in: query
+        name: sort
+        description: An optional parameter to sort by date
+      responses:
+        200:
+          description: OK
+      tags:
+      - Travel
+      - Search
+  /api/packages/createTrip:
+    post:
+      summary: Create A Trip
+      description: Mobile API Packages Create Trip operation
+      operationId: packages-create-trip
+      x-api-path-slug: apipackagescreatetrip-post
+      parameters:
+      - in: formData
+        name: destinationId
+        description: stubbed
+      - in: formData
+        name: productKey
+        description: The product ID (piid) of the package you would like to get hotel
+          offers for
+      - in: formData
+        name: roomOccupants[0].childGuestAge
+        description: represents the age of a single child guest staying in this room
+      - in: formData
+        name: roomOccupants[0].infantsInSeat
+        description: Any infants in seat
+      - in: formData
+        name: roomOccupants[0].numberOfAdultGuests
+        description: 'Number of adults staying in this room (default: 1)'
+      - in: formData
+        name: roomOccupants[0].seniorCount
+        description: 'Number of seniors staying in this room (default: 0)'
+      - in: formData
+        name: tripName
+        description: stubbed
+      responses:
+        200:
+          description: OK
+      tags:
+      - Travel
+      - Packages

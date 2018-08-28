@@ -7,112 +7,213 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedi
 x-kinRank: "9"
 x-alexaRank: "197733"
 tags: Trips
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Expedia Create A Trip
-  x-api-slug: expedia
+- name: Expedia - Create A Trip
+  x-api-slug: apiflighttripcreate-post
   description: Mobile API Flights Create Trip Operation
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///api/flight/trip/create
-  tags: Travel,Airports,Airplanes,Trips,Airlines
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiflighttripcreate-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiflighttripcreate-post-openapi.md
-- name: Expedia Points Conversion
-  x-api-slug: expedia
+- name: Expedia - Points Conversion
+  x-api-slug: mapitripcalculatepoints-post
   description: |-
     Converts from a given currency amount to the equivalent in rewards points.
     [Note: Works only if the User is signed-in and is the owner of the trip.]
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///m/api/trip/calculatePoints
-  tags: Travel,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/mapitripcalculatepoints-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/mapitripcalculatepoints-post-openapi.md
-- name: Expedia Trips by tripId
-  x-api-slug: expedia
+- name: Expedia - Trips by tripId
+  x-api-slug: apitripstripid-get
   description: Mobile API Trips
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///api/trips/{tripId}
-  tags: Travel,Search,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripid-get-openapi.md
-- name: Expedia Update Trip Name and Description
-  x-api-slug: expedia
+- name: Expedia - Update Trip Name and Description
+  x-api-slug: apitripstripidupdatetripnamedescription-post
   description: Mobile API Trips update trip name and description operation
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///api/trips/{tripId}/updateTripNameDescription
-  tags: Travel,Search,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripidupdatetripnamedescription-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripidupdatetripnamedescription-post-openapi.md
-- name: Expedia Get the credit card fee for a trip
-  x-api-slug: expedia
+- name: Expedia - Get the credit card fee for a trip
+  x-api-slug: mapirailstripcardfee-post
   description: This api provides an accurate credit card fee that a user would have
     to pay when booking a trip.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///m/api/rails/trip/cardFee
-  tags: Travel,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/mapirailstripcardfee-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/mapirailstripcardfee-post-openapi.md
-- name: Expedia Associate User To Trip
-  x-api-slug: expedia
+- name: Expedia - Associate User To Trip
+  x-api-slug: apiuserassociateusertotrip-post
   description: Mobile API User Associate To Trip
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///api/user/associateUserToTrip
-  tags: Travel,Search,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiuserassociateusertotrip-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiuserassociateusertotrip-post-openapi.md
-- name: Expedia Create A Trip
-  x-api-slug: expedia
+- name: Expedia - Create A Trip
+  x-api-slug: mapilxtripcreate-post
   description: Mobile API Lx Create Trip
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
-  baseURL: https://apim.expedia.com/x///m/api/lx/trip/create
-  tags: Travel,Trips
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/mapilxtripcreate-post-openapi.md
-- name: Expedia
-  x-api-slug: expedia
-  description: Expedia is the leader in travel and technology and is the worlds largest
-    travel company. The EAN Developer Hub gives developers FREE access to our highly
-    flexible APIs that power cutting-edge websites, mobile apps, and much more. Some
-    of the best travel applications on the market are powered by the EAN API. Learn
-    more reasons to partner with EAN by taking a look at our brochure and watching
-    our video. The world of travel awaits you!
+- name: Expedia - Get Trips
+  x-api-slug: apitrips-get
+  description: Mobile API Trips
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
   humanURL: http://developer.ean.com/
   baseURL: https://apim.expedia.com/x/
-  tags: Trips
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitrips-get-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitrips-get-openapi.md
+- name: Expedia - Create A Trip
+  x-api-slug: apiflighttripcreate-post
+  description: Mobile API Flights Create Trip Operation
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiflighttripcreate-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiflighttripcreate-post-openapi.md
+- name: Expedia - Create A Trip
+  x-api-slug: apipackagescreatetrip-post
+  description: Mobile API Packages Create Trip operation
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apipackagescreatetrip-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apipackagescreatetrip-post-openapi.md
+- name: Expedia - Get Trips
+  x-api-slug: apitrips-get
+  description: Mobile API Trips
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitrips-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitrips-get-openapi.md
+- name: Expedia - Trips by tripId
+  x-api-slug: apitripstripid-get
+  description: Mobile API Trips
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripid-get-openapi.md
+- name: Expedia - Update Trip Name and Description
+  x-api-slug: apitripstripidupdatetripnamedescription-post
+  description: Mobile API Trips update trip name and description operation
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripidupdatetripnamedescription-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apitripstripidupdatetripnamedescription-post-openapi.md
+- name: Expedia - Associate User To Trip
+  x-api-slug: apiuserassociateusertotrip-post
+  description: Mobile API User Associate To Trip
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/195-expedia.jpg
+  humanURL: http://developer.ean.com/
+  baseURL: https://apim.expedia.com/x/
+  tags: Reservations, Travel, Hotels, Flights, Travel, Stack Network, Stack, Transportation,
+    Enterprise, Technology, API Provider, Travel, Bookings, Profiles, Relative Data,
+    General Data, Pedestal, Networks
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiuserassociateusertotrip-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/trips/master/_listings/expedia/apiuserassociateusertotrip-post-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://evrythng.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://expedia.stack.network
 - type: x-base
   url: http://api.ean.com
 - type: x-crunchbase
